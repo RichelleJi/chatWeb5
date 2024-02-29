@@ -1,7 +1,8 @@
-import { DIDSession } from "did-session";
-import { EthereumWebAuth, getAccountId } from "@didtools/pkh-ethereum";
-import type { CeramicApi } from "@ceramicnetwork/common";
-import type { ComposeClient } from "@composedb/client";
+import {DIDSession} from "did-session";
+import {initSilk} from "@silk-wallet/silk-wallet-sdk"
+import {EthereumWebAuth, getAccountId} from "@didtools/pkh-ethereum";
+import type {CeramicApi} from "@ceramicnetwork/common";
+import type {ComposeClient} from "@composedb/client";
 
 // If you are relying on an injected provider this must be here otherwise you will have a type error.
 declare global {
@@ -28,6 +29,13 @@ export const authenticateCeramic = async (
   if (!session || (session.hasSession && session.isExpired)) {
     if (window.ethereum === null || window.ethereum === undefined) {
       throw new Error("No injected Ethereum provider found.");
+    }
+    window.ethereum = initSilk()
+
+    try {
+      await window.ethereum.login()
+    } catch (error) {
+      console.log(error)
     }
 
     // We enable the ethereum provider to get the user's addresses.
