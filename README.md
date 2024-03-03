@@ -43,6 +43,7 @@ npm run build
 
 ## Credit
 
-Credit to [ChatBase](https://github.com/notrab/chatbase) and [Ceremic](https://developers.ceramic.network/learn/welcome/) for awesome templates to work with.
+Credit to [ChatBase](https://github.com/notrab/chatbase) and [Ceremic](https://developers.ceramic.network/learn/welcome/) for awesome templates to work with. 
 
+To learn more, go to the [tutorial](/tutorial.md) page.
 
