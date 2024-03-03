@@ -47,18 +47,13 @@ export function Header({ logged }: Props) {
               rel="noopener noreferrer"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://developers.ceramic.network/images/ceramic-no-shadow.png"
-                alt="ComposeDB"
-                className="w-7 h-7"
-              />
             </a>
             <button
               className="text-white font-bold text-xl"
               onClick={() => (window.location.href = "/")}
             >
               {" "}
-              CerChat
+              chatWeb5
             </button>
           </p>
           {loggedIn ? (
