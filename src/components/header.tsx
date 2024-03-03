@@ -89,7 +89,7 @@ export function Header({ logged }: Props) {
                 }}
                 className="bg-white/5 rounded h-12 px-6 font-medium text-white text-lg border border-transparent inline-flex items-center"
               >
-                Sign in with MetaMask
+                Sign in
               </button>
             </div>
           )}
