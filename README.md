@@ -1,8 +1,7 @@
-# Save Chats and Context from OpenAI to ComposeDB on Ceramic
+# chatWeb5
 
-Realtime chat using GraphQL Live Queries, Next.js, and ComposeDB.
+Realtime chat using GraphQL Live Queries, Next.js, ComposeDB and Silk.
 
-To follow the full tutorial, go to the [tutorial](/tutorial.md) page.
 
 ## Getting Started
 
@@ -37,16 +36,13 @@ npm run dev
 npm run build
 ```
 
-## Learn More
-
-To learn more about Ceramic please visit the following links
-
-- [ComposeDB Sandbox](https://composedb.js.org/sandbox) - Test your queries directly from your browser without any local dependencies.
+## Built With
 - [Ceramic Documentation](https://developers.ceramic.network/learn/welcome/) - Learn more about the Ceramic Ecosystem.
 - [ComposeDB](https://composedb.js.org/) - Details on how to use and develop with ComposeDB!
+- Silk
 
 ## Credit
 
-Credit to [ChatBase](https://github.com/notrab/chatbase) for an awesome template to work with.
+Credit to [ChatBase](https://github.com/notrab/chatbase) and [Ceremic](https://developers.ceramic.network/learn/welcome/) for awesome templates to work with.
 
 
