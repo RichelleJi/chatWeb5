@@ -61,8 +61,6 @@ export const Userform = () => {
               name
               username
               description
-              gender
-              emoji
             }
           }
         }
@@ -88,8 +86,6 @@ export const Userform = () => {
             name
             username
             description
-            gender
-            emoji
           }
         }
       }
@@ -113,8 +109,6 @@ export const Userform = () => {
               name: "${profile?.name}"
               username: "${profile?.username}"
               description: "${profile?.description}"
-              gender: "${profile?.gender}"
-              emoji: "${profile?.emoji}"
             }
           }) 
           {
@@ -122,8 +116,6 @@ export const Userform = () => {
               name
               username
               description
-              gender
-              emoji
             }
           }
         }
@@ -143,8 +135,6 @@ export const Userform = () => {
               name
               username
               description
-              gender
-              emoji
             }
           }
         }
@@ -184,8 +174,6 @@ export const Userform = () => {
               name: "${robotProfile?.name}"
               username: "${robotProfile?.username}"
               description: "${robotProfile?.description}"
-              gender: "${robotProfile?.gender}"
-              emoji: "${robotProfile?.emoji}"
             }
           }) 
           {
@@ -193,8 +181,6 @@ export const Userform = () => {
               name
               username
               description
-              gender
-              emoji
             }
           }
         }
@@ -214,8 +200,6 @@ export const Userform = () => {
               name
               username
               description
-              gender
-              emoji
             }
           }
         }
@@ -295,27 +279,6 @@ export const Userform = () => {
                 />
               </div>
               <div className="">
-                <label>Gender</label>
-                <input
-                  type="text"
-                  defaultValue={profile?.gender || ""}
-                  onChange={(e) => {
-                    setProfile({ ...profile, gender: e.target.value });
-                  }}
-                />
-              </div>
-              <div className="">
-                <label>Emoji</label>
-                <input
-                  type="text"
-                  defaultValue={profile?.emoji || ""}
-                  onChange={(e) => {
-                    setProfile({ ...profile, emoji: e.target.value });
-                  }}
-                  maxLength={2}
-                />
-              </div>
-              <div className="">
                 <button
                   style={{ backgroundColor: "grey", borderRadius: "5px", padding: "5px", margin: "10% 0" }}
                   onClick={() => {
@@ -364,30 +327,6 @@ export const Userform = () => {
                       description: e.target.value,
                     });
                   }}
-                />
-              </div>
-              <div className="">
-                <label>Gender</label>
-                <input
-                  type="text"
-                  defaultValue={robotProfile?.gender || ""}
-                  onChange={(e) => {
-                    setRobotProfile({
-                      ...robotProfile,
-                      gender: e.target.value,
-                    });
-                  }}
-                />
-              </div>
-              <div className="">
-                <label>Emoji</label>
-                <input
-                  type="text"
-                  defaultValue={robotProfile?.emoji || ""}
-                  onChange={(e) => {
-                    setRobotProfile({ ...robotProfile, emoji: e.target.value });
-                  }}
-                  maxLength={2}
                 />
               </div>
               <div className="">

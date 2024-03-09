@@ -113,8 +113,6 @@ export const MessageList = () => {
                 id
                 name
                 username
-                emoji
-                gender
               }
               authorId
             }
@@ -151,8 +149,6 @@ export const MessageList = () => {
               name
               username
               description
-              gender
-              emoji
             }
           }
         }
@@ -179,8 +175,6 @@ export const MessageList = () => {
             name
             username
             description
-            gender
-            emoji
           }
         }
       }
@@ -220,8 +214,6 @@ export const MessageList = () => {
                 id
                 name
                 username
-                emoji
-                gender
               }
               authorId
             }
@@ -279,9 +271,7 @@ export const MessageList = () => {
         body: "",
         profile: {
           description: robotProfile?.description,
-          username: robotProfile?.username,
-          gender: robotProfile?.gender,
-          emoji: robotProfile?.emoji,
+          username: robotProfile?.username
         },
         tag: "bot",
         created: new Date().toISOString(),
@@ -321,8 +311,6 @@ export const MessageList = () => {
                     id
                     name
                     username
-                    emoji
-                    gender
                   }
                   authorId
                 }

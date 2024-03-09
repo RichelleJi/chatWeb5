@@ -40,8 +40,6 @@ const Context: NextPage = () => {
               name
               username
               description
-              gender
-              emoji
               author {
                 id
               }
@@ -213,7 +211,7 @@ const Context: NextPage = () => {
               </button>
               <button
                 style={{
-                  backgroundColor: "lightgray",
+                  backgroundColor: "white",
                   borderRadius: "5px",
                   padding: "5px",
                   margin: "2% 0",
@@ -235,16 +233,16 @@ const Context: NextPage = () => {
         <div className="h-full flex items-center justify-center flex-col space-y-2.5">
           <>
             <p className="text-lg md:text-2xl lg:text-3xl font-medium text-white">
-              Sign in with Silk to join the chat!
+              Sign into SilkDesk!
             </p>
             <p>
               <a
-                href="https://composedb.js.org/"
+                href="https://www.silk.sc/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-white/50 transition hover:text-[#4a9c6d]/100"
               >
-                Powered by ComposeDB &amp; OpenAI Live Queries
+                Learn More About Silk
               </a>
             </p>
           </>

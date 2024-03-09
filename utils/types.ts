@@ -20,8 +20,6 @@ export type Profile = {
   name?: string
   username?: string
   description?: string
-  gender?: string
-  emoji?: string
 }
 
 export type Posts = {
@@ -52,7 +50,6 @@ export type Author = {
   id: string
   name: string
   username: string
-  emoji: string
 }
 
 type Post = {

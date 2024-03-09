@@ -42,7 +42,7 @@ export function Header({ logged }: Props) {
         <div className="flex justify-between items-center">
           <p className="inline-flex items-center space-x-3">
             <a
-              href="https://composedb.js.org/"
+              href="https://silk.sc"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -53,7 +53,7 @@ export function Header({ logged }: Props) {
               onClick={() => (window.location.href = "/")}
             >
               {" "}
-              chatWeb5
+              SilkDesk
             </button>
           </p>
           {loggedIn ? (
